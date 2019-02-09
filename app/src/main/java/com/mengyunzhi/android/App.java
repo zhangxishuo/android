@@ -2,7 +2,7 @@ package com.mengyunzhi.android;
 
 import android.app.Application;
 
-import me.yokeyword.fragmentation.Fragmentation;
+import com.mengyunzhi.android.core.Yunzhi;
 
 public class App extends Application {
 
@@ -10,9 +10,7 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
 
-        Fragmentation.builder()
-                .stackViewMode(Fragmentation.BUBBLE)
-                .debug(true)
-                .install();
+        Yunzhi.init(this)
+            .setAPI("https://127.0.0.1");
     }
 }
