@@ -1,6 +1,8 @@
-package com.mengyunzhi.android.core;
+package com.mengyunzhi.core;
 
 import android.content.Context;
+
+import com.mengyunzhi.core.config.Configuration;
 
 /**
  * yunzhi 应用配置类

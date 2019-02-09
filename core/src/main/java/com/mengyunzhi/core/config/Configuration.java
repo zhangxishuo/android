@@ -1,4 +1,4 @@
-package com.mengyunzhi.android.core;
+package com.mengyunzhi.core.config;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

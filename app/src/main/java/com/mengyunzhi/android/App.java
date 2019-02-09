@@ -2,7 +2,7 @@ package com.mengyunzhi.android;
 
 import android.app.Application;
 
-import com.mengyunzhi.android.core.Yunzhi;
+import com.mengyunzhi.core.Yunzhi;
 
 public class App extends Application {
 

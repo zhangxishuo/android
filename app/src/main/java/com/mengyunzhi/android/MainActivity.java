@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.mengyunzhi.android.core.Yunzhi;
+import com.mengyunzhi.core.Yunzhi;
 
 public class MainActivity extends AppCompatActivity {
 
