@@ -13,7 +13,21 @@ public class Yunzhi {
      * @return 单例配置对象
      */
     public static Configuration init(Context context) {
-        return Configuration.getInstance()
-                .setContext(context);
+        return getConfiguration().setContext(context);
+    }
+
+    /**
+     * 获取上下文对象
+     * @return 获取上下文
+     */
+    public static Context getContext() {
+        return getConfiguration().getContext();
+    }
+
+    /**
+     * 获取配置单例对象
+     */
+    private static Configuration getConfiguration() {
+        return Configuration.getInstance();
     }
 }
