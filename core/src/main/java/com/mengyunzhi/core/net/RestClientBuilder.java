@@ -1,5 +1,6 @@
 package com.mengyunzhi.core.net;
 
+import com.mengyunzhi.core.net.callback.Error;
 import com.mengyunzhi.core.net.callback.Failure;
 import com.mengyunzhi.core.net.callback.Request;
 import com.mengyunzhi.core.net.callback.Success;
@@ -17,7 +18,7 @@ public class RestClientBuilder {
 
     private String url;
 
-    private final Map<String, Object> PARAMS = RestCreater.getParams();
+    private final Map<String, Object> PARAMS = RestCreator.getParams();
 
     private Request request;
 

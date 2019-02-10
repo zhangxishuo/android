@@ -10,7 +10,8 @@ import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.scalars.ScalarsConverterFactory;
 
-public class RestCreater {
+@SuppressWarnings({"WeakerAccess", "unused"})
+public class RestCreator {
 
     public static RestService getRestService() {
         return RestServiceHolder.REST_SERVICE;
