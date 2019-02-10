@@ -2,6 +2,8 @@ package com.mengyunzhi.core.net;
 
 import com.mengyunzhi.core.Yunzhi;
 
+import java.util.Map;
+import java.util.WeakHashMap;
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.OkHttpClient;
@@ -10,8 +12,17 @@ import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 public class RestCreater {
 
-    public RestService getRestService() {
+    public static RestService getRestService() {
         return RestServiceHolder.REST_SERVICE;
+    }
+
+    public static Map<String, Object> getParams() {
+        return ParamsHolder.PARAMS;
+    }
+
+    private static class ParamsHolder {
+
+        private static final Map<String, Object> PARAMS = new WeakHashMap<>();
     }
 
     private static class RestServiceHolder {

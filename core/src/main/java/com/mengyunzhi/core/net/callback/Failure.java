@@ -1,7 +1,7 @@
 package com.mengyunzhi.core.net.callback;
 
 @FunctionalInterface
-public interface Success {
+public interface Failure {
 
-    void onSuccess(String response);
+    void onFailure();
 }
