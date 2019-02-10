@@ -21,6 +21,11 @@ public abstract class YunzhiFragment extends SwipeBackFragment {
      */
     public abstract Object setLayout();
 
+    /**
+     * 组件初始化
+     */
+    public abstract void init();
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -35,6 +40,8 @@ public abstract class YunzhiFragment extends SwipeBackFragment {
         } else if (layout instanceof View) {
             rootView = (View) layout;
         }
+
+        init();
 
         return rootView;
     }
