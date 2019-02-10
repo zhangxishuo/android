@@ -6,6 +6,6 @@ public class MyFragment extends YunzhiFragment {
 
     @Override
     public Object setLayout() {
-        return R.layout.fragment_my ;
+        return R.layout.fragment_my;
     }
 }
