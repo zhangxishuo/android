@@ -27,6 +27,14 @@ public class Yunzhi {
     }
 
     /**
+     * 获取API地址
+     * @return API地址
+     */
+    public static String getApi() {
+        return getConfiguration().getAPI();
+    }
+
+    /**
      * 获取配置单例对象
      */
     private static Configuration getConfiguration() {
