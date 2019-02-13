@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">app</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="navigation_discover">发现</string>
+    <string name="navigation_bookshelf">书架</string>
+    <string name="navigation_idea">想法</string>
+    <string name="navigation_me">我</string>
 </resources>
